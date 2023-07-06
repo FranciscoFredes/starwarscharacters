@@ -1,12 +1,93 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.backgroundContainer{
+
+header {
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: #0000FF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.backgroundContainer {
     background-image: url(https://images.unsplash.com/photo-1624562641708-14121f5e4095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1189&q=80);
     height: 100vh;
-    background-attachment: fixed;    
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0.7;
+}
+
+.card {
+    position: relative;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(1fr);    
+    padding: 5px;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.section-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    padding: 5px;
+    gap: 20px;
+
+}
+
+.card-body {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardContainer {
+    border-radius: 0.625rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: 60vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.getButton {
+    margin-top: 5em;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 0.3125rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.card-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    
 }
